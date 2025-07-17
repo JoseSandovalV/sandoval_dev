@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Título del artículo | Blog de Jose Sandoval</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="../assets/Images/code.ico" type="image/x-icon" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    .animate-pulse-slow {
+      animation: pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col relative">
+
+  <!-- Encabezado con estilo similar a la página principal -->
+<header class="bg-gradient-to-b from-gray-900 to-gray-700 py-10 md:py-14 flex flex-col items-center px-4 text-center" data-aos="fade-down">
+  <h1 class="text-3xl md:text-4xl font-bold mb-2 md:mb-3 max-w-3xl leading-snug">
+    Concurso InnovaTEC 2025: Desarrollo de un Sistema de Gestión de becas alimentarias
+  </h1>
+  <p class="text-gray-300 italic text-sm md:text-base max-w-xl">
+    Publicado el 12 de Mayo de 2025 por Jose Sandoval
+  </p>
+</header>
+
+<!-- Contenido principal -->
+<main class="flex-grow max-w-4xl mx-auto px-6 py-16 prose prose-invert text-white space-y-12">
+  <p data-aos="fade-up" style="text-align: justify;">
+    El desarrollo del proyecto integrador que duró alrededor de algunos semestres llegó a su fin con la participación en el concurso InnovaTEC 2025.
+    Este evento reunió a estudiantes de diversas carreras del instituto tecnológico superior de Lerdo, donde se presentaron proyectos innovadores y soluciones tecnológicas.
+    Nuestro equipo, compuesto por estudiantes de Ingeniería Informática, trabajó arduamente para desarrollar un sistema de gestión de becas alimentarias que busca optimizar 
+    la distribución y seguimiento de las mismas una vez ya otorgadas, buscando mejorar la eficiencia y transparencia en el proceso.
+  </p>
+
+  <p data-aos="fade-up" data-aos-delay="100" style="text-align: justify;">
+    Durante el concurso, tuvimos la oportunidad de presentar nuestro proyecto ante un jurado compuesto por expertos en tecnología y educación. 
+    La experiencia fue enriquecedora, no solo por la retroalimentación recibida, sino también por la interacción con otros equipos y la posibilidad 
+    de aprender de sus enfoques y soluciones.
+  </p>
+
+  <!-- Imagen ajustada con menor ancho y separación -->
+  <figure data-aos="fade-up" data-aos-delay="200" class="flex flex-col items-center space-y-4">
+    <img src="../../assets/Images/PostID-1/PhotoGroup.jpg" alt="Descripción de la imagen"
+         class="rounded-md shadow-lg w-full max-w-2xl mx-auto" />
+    <figcaption class="text-sm text-gray-400 text-center">
+      Foto del grupo de trabajo al terminar el concurso
+    </figcaption>
+  </figure>
+
+    <p data-aos="fade-up" data-aos-delay="100" style="text-align: justify;">
+    La foto anterior muestra al equipo de trabajo al finalizar el concurso, reflejando el esfuerzo y dedicación invertidos en el proyecto.
+    Obtuvimos un segundo lugar en la categoría de bienes de consumo, lo cual nos motiva a seguir mejorando y aprendiendo en el ámbito de la tecnología y la innovación.
+  </p>
+</main>
+
+  <!-- Pie de página con botón similar -->
+  <footer class="bg-gradient-to-b py-8 text-center" data-aos="fade-up">
+    <a href="../index.html" 
+       class="inline-block bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 px-8 rounded-xl transition">
+       ← Regresar al blog
+    </a>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+    lucide.createIcons();
+  </script>
+</body>
+</html>

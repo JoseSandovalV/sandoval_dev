@@ -5,14 +5,218 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/Images/code.ico" type="image/x-icon">
     <link rel="shortcut icon" href="assets/Images/code.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Developer Sandoval</title>
 </head>
-<body>
-    
-    <h1 class="text-4xl font-bold text-center text-gray-800 mt-10">
-        ¡Hola, soy Jose Sandoval!
+<header class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-gray-900 to-gray-700 text-white px-8 gap-12">
+
+  <!-- Barras laterales -->
+  <div class="hidden md:block absolute top-0 left-0 h-full w-4 bg-gradient-to-b from-indigo-600 via-indigo-400 to-indigo-600 rounded-r-xl opacity-40 animate-pulse-slow"></div>
+  <div class="hidden md:block absolute top-0 right-0 h-full w-4 bg-gradient-to-b from-green-500 via-green-300 to-green-500 rounded-l-xl opacity-40 animate-pulse-slow"></div>
+
+  <!-- Iconos animados -->
+  <svg class="hidden md:block absolute left-8 top-1/4 w-20 h-20 opacity-20 animate-floating" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#6366F1">
+    <rect x="12" y="12" width="40" height="40" rx="8" ry="8" stroke="#6366F1" fill="none" />
+    <path d="M20 32h24M32 20v24" stroke="#6366F1"/>
+  </svg>
+
+  <svg class="hidden md:block absolute right-8 bottom-1/3 w-20 h-20 opacity-20 animate-floating-delay" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#34D399">
+    <circle cx="32" cy="32" r="20" stroke="#34D399" fill="none"/>
+    <path d="M32 12v40M12 32h40" stroke="#34D399"/>
+  </svg>
+
+    <!-- Imagen -->
+  <div class="mt-12 flex justify-center">
+    <img src="assets/Images/profile.jpg" alt="Foto de Jose Sandoval" class="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full shadow-lg border-4 border-white">
+  </div>
+
+  <div class="max-w-xl text-center">
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-8 px-6 md:px-12 whitespace-normal break-words">
+      <span id="dynamic-text"></span><span class="cursor">|</span>
     </h1>
+    <p class="text-lg md:text-xl leading-relaxed text-gray-300 mb-12 px-4 md:px-6 py-8">
+      Soy Ingeniero en Informática con especialidad en Ciberseguridad. A lo largo de mi formación, he desarrollado
+       competencias en el diseño, análisis y desarrollo de sistemas informáticos, con un enfoque particular en la 
+       protección de la información, la prevención de vulnerabilidades y la construcción de entornos digitales seguros.
+    </p>
+    <div class="flex flex-wrap justify-center gap-6">
+      <a href="#proyectos" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 px-8 rounded-2xl transition text-base md:text-lg">
+        Ver proyectos
+      </a>
+      <a href="assets/cv.pdf" download class="border border-white hover:bg-white hover:text-gray-900 font-semibold py-3 px-8 rounded-2xl transition text-base md:text-lg">
+        Descargar CV
+      </a>
+      <a href="blog/index.html" class="bg-white text-gray-900 hover:bg-gray-200 font-semibold py-3 px-8 rounded-2xl transition text-base md:text-lg">
+        Ir al blog
+      </a>
+    </div>
+  </div>
+
+</header>
+
+<!-- HABILIDADES -->
+<section id="habilidades" class="bg-white py-20 px-6">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-16" data-aos="fade-up">
+      Habilidades Técnicas
+    </h2>
+
+    <!-- Lenguajes -->
+    <div class="mb-16">
+      <h3 class="text-2xl font-semibold text-gray-700 mb-6" data-aos="fade-right">Lenguajes de desarrollo</h3>
+      <div class="flex flex-wrap gap-5" data-aos="fade-up">
+        <span class="flex items-center gap-2 bg-indigo-100 text-indigo-800 px-5 py-2 rounded-full text-lg font-semibold">
+          <i data-lucide="code" class="w-5 h-5"></i> HTML
+        </span>
+        <span class="flex items-center gap-2 bg-indigo-100 text-indigo-800 px-5 py-2 rounded-full text-lg font-semibold">
+          <i data-lucide="terminal-square" class="w-5 h-5"></i> JavaScript
+        </span>
+        <span class="flex items-center gap-2 bg-indigo-100 text-indigo-800 px-5 py-2 rounded-full text-lg font-semibold">
+          <i data-lucide="file-code" class="w-5 h-5"></i> PHP
+        </span>
+        <span class="flex items-center gap-2 bg-indigo-100 text-indigo-800 px-5 py-2 rounded-full text-lg font-semibold">
+          <i data-lucide="brain-cog" class="w-5 h-5"></i> Python
+        </span>
+      </div>
+    </div>
+
+    <!-- Frameworks y Herramientas -->
+    <div class="mb-16">
+      <h3 class="text-2xl font-semibold text-gray-700 mb-6" data-aos="fade-right">Frameworks y Herramientas</h3>
+      <div class="flex flex-wrap gap-5" data-aos="fade-up">
+        <span class="flex items-center gap-2 bg-green-100 text-green-800 px-5 py-2 rounded-full text-lg font-semibold">
+          <i data-lucide="flame" class="w-5 h-5"></i> Laravel
+        </span>
+        <span class="flex items-center gap-2 bg-green-100 text-green-800 px-5 py-2 rounded-full text-lg font-semibold">
+          <i data-lucide="git-branch" class="w-5 h-5"></i> Git
+        </span>
+        <span class="flex items-center gap-2 bg-green-100 text-green-800 px-5 py-2 rounded-full text-lg font-semibold">
+          <i data-lucide="github" class="w-5 h-5"></i> GitHub
+        </span>
+        <span class="flex items-center gap-2 bg-green-100 text-green-800 px-5 py-2 rounded-full text-lg font-semibold">
+          <i data-lucide="package" class="w-5 h-5"></i> Docker
+        </span>
+        <span class="flex items-center gap-2 bg-green-100 text-green-800 px-5 py-2 rounded-full text-lg font-semibold">
+          <i data-lucide="server" class="w-5 h-5"></i> MySQL
+        </span>
+        <span class="flex items-center gap-2 bg-green-100 text-green-800 px-5 py-2 rounded-full text-lg font-semibold">
+          <i data-lucide="database" class="w-5 h-5"></i> PostgreSQL
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ciberseguridad" class="bg-gray-50 py-20 px-6">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-16" data-aos="fade-up">
+      Enfoque en Ciberseguridad
+    </h2>
+
+    <!-- Descripción general -->
+    <p class="text-lg text-gray-700 mb-12 text-center max-w-3xl mx-auto" data-aos="fade-up">
+      Como Ingeniero informático con especialidad en Ciberseguridad esta área representa una parte fundamental de mi 
+      formación y vocación profesional, ya que me permite aplicar conocimientos técnicos avanzados en el análisis, protección 
+      y aseguramiento de sistemas, redes y datos.
+    </p>
+
+    <!-- Herramientas / Tecnologías -->
+    <div class="mb-16">
+      <h3 class="text-2xl font-semibold text-gray-700 mb-6" data-aos="fade-right">Herramientas y Tecnologías</h3>
+      <div class="flex flex-wrap gap-5" data-aos="fade-up">
+        <span class="flex items-center gap-2 bg-red-100 text-red-800 px-5 py-2 rounded-full text-lg font-semibold">
+          <i data-lucide="shield" class="w-5 h-5"></i> Wireshark
+        </span>
+        <span class="flex items-center gap-2 bg-red-100 text-red-800 px-5 py-2 rounded-full text-lg font-semibold">
+          <i data-lucide="bug" class="w-5 h-5"></i> Nmap
+        </span>
+        <span class="flex items-center gap-2 bg-red-100 text-red-800 px-5 py-2 rounded-full text-lg font-semibold">
+          <i data-lucide="terminal" class="w-5 h-5"></i> Kali Linux
+        </span>
+      </div>
+    </div>
+
+    <!-- Intereses / Áreas de enfoque -->
+    <div>
+      <h3 class="text-2xl font-semibold text-gray-700 mb-6" data-aos="fade-right">Áreas de Enfoque</h3>
+      <ul class="grid md:grid-cols-2 gap-6 text-gray-700 text-lg list-disc pl-6" data-aos="fade-up">
+        <li>Auditorías de seguridad en aplicaciones web</li>
+        <li>Análisis de vulnerabilidades y pruebas de penetración</li>
+        <li>Protección de datos sensibles</li>
+        <li>Gestión de riesgos y políticas de seguridad</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="hobbies" class="bg-white py-20 px-6">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-16" data-aos="fade-up">
+      Más allá del código
+    </h2>
+
+    <p class="text-lg text-gray-700 mb-12 text-center max-w-3xl mx-auto" data-aos="fade-up">
+      Además de la tecnología y la ciberseguridad, encuentro inspiración y equilibrio en actividades que me permiten reflexionar, aprender y conectar con otras realidades. Mis hobbies complementan mi formación profesional al nutrir mi pensamiento crítico, mi sensibilidad y mi creatividad.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-gray-800 text-lg" data-aos="fade-up">
+      <div class="flex items-start gap-4">
+        <i data-lucide="book-open" class="w-40 h-12 text-indigo-600 mt-1"></i>
+        <span><strong>Lectura filosófica y científica:</strong> Me interesa la reflexión sobre la conciencia, la existencia y el conocimiento, así como temas relacionados con la psicología y las ciencias cognitivas.</span>
+      </div>
+      <div class="flex items-start gap-4">
+        <i data-lucide="microscope" class="w-40 h-12 text-green-600 mt-1"></i>
+        <span><strong>Exploración tecnológica:</strong> Me gusta aprender nuevas herramientas, lenguajes o enfoques en desarrollo y seguridad, por cuenta propia.</span>
+      </div>
+      <div class="flex items-start gap-4">
+        <i data-lucide="pen-tool" class="w-40 h-12 text-pink-600 mt-1"></i>
+        <span><strong>Escritura:</strong> Disfruto escribir reflexiones personales, cuentos y pensamientos sobre la conciencia, los animales y la condición humana.</span>
+      </div>
+      <div class="flex items-start gap-4">
+        <i data-lucide="mountain" class="w-40 h-12 text-yellow-600 mt-1"></i>
+        <span><strong>Conexión con la naturaleza:</strong> Aprecio los espacios tranquilos y naturales como forma de despeje y contemplación.</span>
+      </div>
+      <div class="flex items-start gap-4">
+        <i data-lucide="brain" class="w-40 h-12 text-purple-600 mt-1"></i>
+        <span><strong>Aprendizaje continuo:</strong> Siempre estoy buscando nuevos conocimientos, ya sea en inversiones, desarrollo personal o temas interdisciplinarios.</span>
+      </div>
+      <div class="flex items-start gap-4">
+        <i data-lucide="circle" class="w-40 h-12 text-blue-600 mt-1"></i>
+        <span><strong>Fútbol:</strong> Practico y sigo el fútbol como un deporte que fomenta el trabajo en equipo y la disciplina.</span>
+      </div>
+      <div class="flex items-start gap-4">
+        <i data-lucide="circle" class="w-40 h-12 text-orange-600 mt-1"></i>
+        <span><strong>Básquetbol:</strong> Disfruto el básquetbol por su dinamismo y estrategia en el juego.</span>
+      </div>
+      <div class="flex items-start gap-4">
+        <i data-lucide="navigation" class="w-40 h-12 text-red-600 mt-1"></i>
+        <span><strong>Correr:</strong> Correr me ayuda a mantenerme activo, despejar la mente y cultivar la perseverancia.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    <script src="js/app.js"></script>
+
+      <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+        duration: 800,
+        once: true,
+        });
+    </script>
+
+    <script>
+        lucide.createIcons();
+    </script>
 
 </body>
 </html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Título del artículo | Blog de Jose Sandoval</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="../assets/Images/code.ico" type="image/x-icon" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    .animate-pulse-slow {
+      animation: pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col relative">
+
+  <!-- Decorativos laterales -->
+  <div class="hidden md:block absolute top-0 left-0 h-full w-4 bg-gradient-to-b from-indigo-600 via-indigo-400 to-indigo-600 rounded-r-xl opacity-30 animate-pulse-slow"></div>
+  <div class="hidden md:block absolute top-0 right-0 h-full w-4 bg-gradient-to-b from-green-500 via-green-300 to-green-500 rounded-l-xl opacity-30 animate-pulse-slow"></div>
+
+  <!-- Encabezado con estilo similar a la página principal -->
+  <header class="bg-gradient-to-b from-gray-900 to-gray-700 py-20 flex flex-col items-center px-6 text-center" data-aos="fade-down">
+    <h1 class="text-5xl md:text-6xl font-bold mb-4 max-w-4xl">
+      Concurso InnovaTEC 2025: Desarrollo de un Sistema de Gestión de becas alimentarias
+    </h1>
+    <p class="text-gray-300 italic text-lg max-w-2xl">
+      Publicado el 12 de Mayo de 2025 por Jose Sandoval
+    </p>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="flex-grow max-w-4xl mx-auto px-6 py-16 prose prose-invert text-white">
+    <p data-aos="fade-up">
+      Aquí va la introducción o el primer párrafo de tu artículo. Puedes agregar texto explicativo, reflexiones, o cualquier contenido que desees compartir.
+    </p>
+    <p data-aos="fade-up" data-aos-delay="100">
+      Puedes incluir imágenes, gráficos, bloques de código, listas, citas y más para enriquecer tu contenido.
+    </p>
+
+    <!-- Ejemplo de imagen -->
+    <figure data-aos="fade-up" data-aos-delay="200">
+      <img src="../../assets/Images/ejemplo" alt="Descripción de la imagen" class="rounded-md shadow-lg" />
+      <figcaption class="text-sm text-gray-400 mt-2 text-center">Foto del grupo de trabajo al terminar el concurso</figcaption>
+    </figure>
+
+    <!-- Ejemplo de lista -->
+    <ul data-aos="fade-up" data-aos-delay="300">
+      <li>Primer punto importante</li>
+      <li>Segundo punto que deseas destacar</li>
+      <li>Tercer punto con información adicional</li>
+    </ul>
+
+    <!-- Ejemplo de bloque de código -->
+    <pre data-aos="fade-up" data-aos-delay="400"><code class="language-js">
+// Código de ejemplo
+function saludar() {
+  console.log("Hola, mundo!");
+}
+saludar();
+    </code></pre>
+  </main>
+
+  <!-- Pie de página con botón similar -->
+  <footer class="bg-gradient-to-b from-gray-700 to-gray-900 py-8 text-center" data-aos="fade-up">
+    <a href="../index.html" 
+       class="inline-block bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 px-8 rounded-xl transition">
+       ← Regresar al blog
+    </a>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+    lucide.createIcons();
+  </script>
+</body>
+</html>

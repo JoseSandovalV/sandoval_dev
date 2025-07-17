@@ -1,0 +1,32 @@
+  .cursor {
+    display: inline-block;
+    width: 1ch;
+    animation: blink 1s step-end infinite;
+    color: white;
+  }
+
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+
+  @keyframes pulse-slow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.7; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 6s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.animate-floating {
+  animation: floating 5s ease-in-out infinite;
+}
+
+.animate-floating-delay {
+  animation: floating 6.5s ease-in-out infinite;
+}
