@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PLH | Jose Sandoval</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="/assets/Images/code.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/assets/Images/code.ico" type="image/x-icon">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    .animate-pulse-slow {
+      animation: pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 min-h-screen flex flex-col relative">
+
+  <!-- Bordes decorativos -->
+  <div class="hidden md:block absolute top-0 left-0 h-full w-4 bg-gradient-to-b from-green-300 via-green-100 to-green-300 rounded-r-xl opacity-30 animate-pulse-slow"></div>
+  <div class="hidden md:block absolute top-0 right-0 h-full w-4 bg-gradient-to-b from-green-300 via-green-100 to-green-300 rounded-l-xl opacity-30 animate-pulse-slow"></div>
+
+  <!-- Encabezado -->
+  <header class="bg-gradient-to-b from-green-100 to-green-50 py-10 flex flex-col items-center px-6 text-center" data-aos="fade-down">
+    <h1 class="text-3xl md:text-4xl font-bold mb-3 max-w-3xl text-green-700 leading-snug">
+      Proyecto Integrador: PLH - Sistema de Gestión de Becas Alimentarias
+    </h1>
+    <p class="text-green-900 italic text-base">
+      Publicado el 12 de Mayo de 2025 por Jose Sandoval
+    </p>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="flex-grow max-w-4xl mx-auto px-6 py-16 space-y-12">
+
+    <!-- Video de YouTube -->
+    <section data-aos="fade-up">
+    <div class="w-full h-[300px] md:h-[500px] rounded-lg shadow-md overflow-hidden">
+        <iframe
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/br5LuIyDt18"
+        title="Proyecto en funcionamiento"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+        </iframe>
+    </div>
+    </section>
+
+    <!-- Descripción del proyecto -->
+    <section data-aos="fade-up">
+      <h2 class="text-2xl font-bold text-green-700 mb-4">Descripción del proyecto</h2>
+      <p class="text-justify text-gray-800 leading-relaxed">
+        Este proyecto surge como una respuesta a la necesidad de optimizar el proceso de gestión de becas alimentarias en instituciones educativas. 
+        Desarrollado con Laravel y MySQL, el sistema permite realizar solicitudes, administrar roles y dar seguimiento a los beneficiarios.
+        Fue presentado en el concurso InnovaTEC 2025, representando al equipo de Ingeniería Informática del Instituto Tecnológico Superior de Lerdo.
+      </p>
+    </section>
+
+    <!-- Tecnologías utilizadas -->
+    <section data-aos="fade-up">
+      <h2 class="text-2xl font-bold text-green-700 mb-4">Tecnologías utilizadas</h2>
+      <div class="flex flex-wrap gap-3 text-gray-700">
+        <span class="flex items-center gap-2 bg-green-100 px-4 py-1 rounded-full shadow text-sm font-medium">
+          <i data-lucide="flame" class="w-4 h-4 text-green-600"></i> Laravel
+        </span>
+        <span class="flex items-center gap-2 bg-green-100 px-4 py-1 rounded-full shadow text-sm font-medium">
+          <i data-lucide="database" class="w-4 h-4 text-green-600"></i> MySQL
+        </span>
+        <span class="flex items-center gap-2 bg-green-100 px-4 py-1 rounded-full shadow text-sm font-medium">
+          <i data-lucide="code" class="w-4 h-4 text-green-600"></i> Bootstrap
+        </span>
+        <span class="flex items-center gap-2 bg-green-100 px-4 py-1 rounded-full shadow text-sm font-medium">
+          <i data-lucide="git-branch" class="w-4 h-4 text-green-600"></i> GitHub
+        </span>
+        <span class="flex items-center gap-2 bg-green-100 px-4 py-1 rounded-full shadow text-sm font-medium">
+          <i data-lucide="shield" class="w-4 h-4 text-green-600"></i> Breeze
+        </span>
+      </div>
+    </section>
+
+    <!-- Dificultades / Lecciones aprendidas -->
+    <section data-aos="fade-up">
+      <h2 class="text-2xl font-bold text-green-700 mb-4">Dificultades y lecciones aprendidas</h2>
+      <ul class="list-disc list-inside space-y-2 text-gray-800">
+        <li>Comprensión inicial de los componentes de Laravel y su estructura MVC.</li>
+        <li>Gestión de roles y permisos en un entorno con múltiples niveles de usuario.</li>
+        <li>Implementación de autenticación segura usando Laravel Breeze.</li>
+        <li>Trabajo colaborativo utilizando Git y GitHub de manera eficiente.</li>
+        <li>Aprendizaje constante frente a problemas inesperados durante el desarrollo.</li>
+      </ul>
+    </section>
+
+    <!-- Enlace directo al proyecto -->
+    <section data-aos="fade-up" class="bg-green-50 border border-green-200 p-6 rounded-lg shadow">
+      <h2 class="text-2xl font-bold text-green-600 mb-3">Enlace directo al proyecto</h2>
+      <p class="text-green-800 mb-2">
+        Puedes compartir este enlace para ver el proyecto completo:
+      </p>
+      <input
+        type="text"
+        readonly
+        class="w-full rounded-md bg-green-100 text-green-800 px-4 py-2 font-mono select-all cursor-pointer"
+        value="https://github.com/DanielCar29/PLH/tree/v5.4.1-alpha"
+        onclick="this.select(); document.execCommand('copy'); alert('¡Enlace copiado!');"
+      />
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="bg-gradient-to-b from-green-100 to-green-200 py-10 text-center" data-aos="fade-up">
+    <a href="../index.html"
+       class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white font-semibold py-3 px-8 rounded-xl transition">
+       <i data-lucide="arrow-left" class="w-4 h-4"></i>
+       Regresar a proyectos
+    </a>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+    lucide.createIcons();
+  </script>
+</body>
+</html>
